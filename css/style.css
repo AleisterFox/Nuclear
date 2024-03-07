@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wow {
+    animation-duration: 1s !important;
+    /* animation-timing-function: linear; */
+}
+
+.delay1 {
+    animation-delay: 1s !important;
+}
+
+.delay2 {
+    animation-delay: 1.5s !important;
+}
+
+.delay3 {
+    animation-delay: 2s !important;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    /* overflow-x: hidden; */
+}
+
+.whatsapp {
+    width: 6rem;
+    height: 6rem;
+    background-color: #29a71a;
+    position: fixed;
+    bottom: 5rem;
+    left: 5rem;
+    border-radius: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 900;
+}
+
+.whatsapp a {
+    font-size: 4rem;
+    color: white;
+}
+
+@font-face {
+    font-family: 'Aperto';
+    src: url('../fonts/Aperto-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Brinnan';
+    src: url('../fonts/Brinnan-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Prompt';
+    src: url('../fonts/Prompt-Regular.ttf');
+}
+
+section {
+    max-width: 100vw;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Brinnan';
+}
+
+p, a, li, span {
+    font-family: 'Prompt';
+}
+
+:root {
+    --width: calc(100% - 16rem);
+    --center: 0 auto;
+    --padding: 0rem 8rem;
+    --purple: #8467bc;
+    --aqua: #2ebe91;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    background-color: transparent;
+    width: fit-content;
+    color: white;
+    font-size: 1.8rem;
+    min-width: 15rem;
+    position: relative;
+    z-index: 1;
+    /* height: 8rem; */
+    border-radius: 10rem;
+    letter-spacing: 0.25rem;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Prompt' !important;
+    font-size: 1.4rem !important;
+}
+
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header {
+    height: 15vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+    transition: all 0.3s ease-in-out;
+}
+
+nav {
+    height: 100%;
+    padding: var(--padding);
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    position: relative;
+    column-gap: 15rem;
+}
+
+header .menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    display: none;
+}
+
+header .menu .sidebar {
+    background-color: #588faa;
+    padding: 5rem;
+    width: 50rem;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5rem;
+}
+
+header .menu .sidebar .close {
+    color: white;
+    font-size: 2rem;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+header .menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    
+}
+
+header nav>a:last-child {
+    right: 8rem;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+header nav .menu__button {
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+
+}
+
+header figure, header picture {
+    display: block;
+    width: 20rem;
+    justify-self: center;
+    /* height: 5rem; */
+}
+
+.menu li a {
+    font-size: 2rem;
+    color: rgb(230, 230, 230);
+    font-weight: 100;
+    transition: all 0.3s linear;
+    position: relative;
+    font-family: 'Aperto';
+}
+
+.menu li a:hover {
+    opacity: 0.6;
+}
+
+.menu li.active {
+    position: relative;
+}
+
+
+
+p {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 7rem;
+    font-weight: 700;
+    width: 75rem;
+    max-width: 100%;
+}
+
+h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+
+
+/* HERO  */
+
+#hero {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#hero .background {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    filter: grayscale(100%);
+}
+
+#hero .background figure {
+    height: 100%;
+    height: 100%;
+}
+
+#hero .container {
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10rem;
+    margin: 0;
+}
+
+#hero .container figure {
+    height: 100%;
+}
+
+#hero .container .left {
+    background: linear-gradient(to right, var(--aqua), var(--purple));
+    opacity: 0.7;
+    border-top-left-radius: 10rem;
+    border-bottom-left-radius: 10rem;
+    padding: 2rem;
+}
+#hero .container .right {
+    background: linear-gradient(to left, var(--aqua), var(--purple));
+    opacity: 0.7;
+    border-top-right-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+    padding: 2rem;
+}
+
+#hero .container a {
+    width: fit-content;
+    border: 2px solid white;
+    border-radius: 0;
+    padding: 0.5rem 0;
+}
+
+/* HERO  */
+
+
+
+
+
+@media screen and (max-width: 1050px) {
+    :root {
+        --width: calc(100% - 8rem);
+        --padding: 0rem 3rem;
+    }
+
+    nav {
+        column-gap: 8rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    :root {
+        --width: calc(100% - 4rem);
+        --padding: 0rem 2rem;
+    }
+
+    header .menu {
+        column-gap: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+
+    :root {
+        --width: calc(100% - 4rem);
+        --padding: 0rem 2rem;
+    }
+
+    nav>a:last-child {
+        display: inline;
+    }
+
+    header .menu {
+        position: absolute;
+        top: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        width: 100vw;
+        left: -2rem;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        display: none;
+    }
+
+    header .menu li {
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    header .menu li a {
+        color: white;
+    }
+
+    header nav>a {
+        display: block;
+    }
+
+    header nav .menu__button {
+        display: block;
+        font-size: 3rem;
+        color: var(--red);
+        transition: all 0.5s ease-in-out;
+        margin-right: 2rem;
+    }
+
+    header figure, header picture {
+        width: 10rem;
+    }
+
+    .menu li:last-child {
+        margin-left: 0;
+    }
+
+
+}
+
+@media screen and (max-width: 550px) {
+
+    #hero .container {
+        border-radius: 0;
+        padding: 4rem 2rem;
+    }
+
+    #met-us p {
+        max-width: 100%;
+        text-align: justify;
+        width: var(--width);
+        margin: var(--center);
+    }
+
+    #category-services h2 {
+        width: var(--width);
+        margin: var(--center);
+    }
+
+    #category-services .container {
+        flex-direction: column-reverse;
+    }
+
+    #category-services .container .left, #category-services .container .right {
+        flex-direction: column-reverse;
+    }
+
+    #us .container .left, #us figure, #us figure img {
+        height: 50vh;
+        min-height: 50vh;
+    }
+
+    #us .container .right {
+        padding-top: 5rem;
+    }
+
+    .category-menu {
+        padding: 5rem 0rem;
+    }
+
+
+    footer {
+        justify-content: flex-start;
+        padding: var(--padding);
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .whatsapp {
+        left: auto;
+        right: 2rem;
+    }
+
+}
+
+
+
+@keyframes showMenu {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes hideMenu {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
