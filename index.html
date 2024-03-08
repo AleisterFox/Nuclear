@@ -3,16 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    /> -->
 
     <link
       href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/animate.css" />
     <link
@@ -28,11 +24,20 @@
       media="(prefers-color-scheme: dark)"
     />
 
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
+    />
+
     <script src="js/wow.min.js"></script>
     <script>
       new WOW().init();
     </script>
-    <title>Hair Restoration by CDCEP</title>
+    <title>Nuclear</title>
   </head>
 
   <body>
@@ -48,12 +53,14 @@
         <div class="menu">
           <div class="sidebar">
             <i class="fa-solid fa-x close"></i>
-            <figure><img src="img/icono-white.png" alt=""></figure>
+            <figure><img src="img/icono-white.png" alt="" /></figure>
             <ul>
-              <li class="navbarb active"><a href="#hero">HOME</a></li>
-              <li class="navbarb"><a href="#met-us">NOSOTROS</a></li>
-              <li class="navbarb"><a href="#category-services">SERVICIOS</a></li>
-              <li class="navbarb"><a href="#footer">CONTACTO</a></li>
+              <li class="navbarb active"><a href="index.html">HOME</a></li>
+              <li class="navbarb"><a href="us.html">NOSOTROS</a></li>
+              <li class="navbarb">
+                <a href="services.html">SERVICIOS</a>
+              </li>
+              <li class="navbarb"><a href="contact.html">CONTACTO</a></li>
             </ul>
           </div>
         </div>
@@ -68,26 +75,560 @@
       <section id="hero">
         <div class="background">
           <figure>
-            <img src="img/hero.png" alt="">
+            <img src="img/hero.png" alt="" />
           </figure>
         </div>
 
-        <div class="container">
+        <div class="container one">
           <div class="left">
             <a href="" class="button square">WHATSAPP</a>
           </div>
           <figure>
-            <img src="img/icono.png" alt="">
+            <img src="img/icono.png" alt="" />
           </figure>
           <div class="right">
             <a href="" class="button square">CONTÁCTANOS</a>
           </div>
         </div>
-      </section>
 
+        <div class="container two">
+          <div class="left">
+            <a href="" class="button square">WHATSAPP</a>
+          </div>
+          <div class="right">
+            <a href="" class="button square">CONTÁCTANOS</a>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <div class="left">
+            <figure><img src="img/pubmed.png" alt="logo pubmed" /></figure>
+            <figure>
+              <img src="img/researchgate.png" alt="logo researchgate" />
+            </figure>
+          </div>
+
+          <div class="right">
+            <h2><span>10 AÑOS</span> DE EXPERIENCIA</h2>
+            <p>en el diagnóstico y tratamiento con radionúclidos</p>
+          </div>
+        </div>
+      </section>
+      <section id="services">
+        <h2>TENEMOS LO QUE <span>necesitas</span></h2>
+        <div class="container">
+          <div class="services">
+            <div class="service">
+              <figure><img src="img/hero.png" alt="" /></figure>
+              <div class="content">
+                <div class="description">
+                  <div class="title">
+                    <p>Tratamiento con radioyodo (I-131)</p>
+                  </div>
+                  <p>Para pacientes con cáncer diferenciado de tiroides.</p>
+                </div>
+                <a
+                  class="gallery"
+                  onclick="document.getElementById('id01').style.display='block'"
+                  ><i class="fa-thin fa-images"></i
+                ></a>
+                <a class="video" onclick="document.getElementById('id02').style.display='block'"
+                  ><i class="fa-thin fa-clapperboard-play"></i
+                ></a>
+              </div>
+            </div>
+            <div class="service">
+              <figure><img src="img/pet.png" alt="" /></figure>
+              <div class="content">
+                <div class="description">
+                  <div class="title"><p>Estudios PET/CT</p></div>
+                </div>
+                <a
+                  class="gallery"
+                  onclick="document.getElementById('id01').style.display='block'"
+                  ><i class="fa-thin fa-images"></i
+                ></a>
+                <a class="video" onclick="document.getElementById('id02').style.display='block'"
+                  ><i class="fa-thin fa-clapperboard-play"></i
+                ></a>
+              </div>
+            </div>
+            <div class="service">
+              <figure><img src="img/lutecio.png" alt="" /></figure>
+              <div class="content">
+                <div class="description">
+                  <div class="title">
+                    <p>Tratamiento con lutecio-177 dota-toc</p>
+                  </div>
+                  <p>Para pacientes con cáncer diferenciado de tiroides.</p>
+                </div>
+                <a
+                  class="gallery"
+                  onclick="document.getElementById('id01').style.display='block'"
+                  ><i class="fa-thin fa-images"></i
+                ></a>
+                <a class="video" onclick="document.getElementById('id02').style.display='block'"
+                  ><i class="fa-thin fa-clapperboard-play"></i
+                ></a>
+              </div>
+            </div>
+            <div class="service">
+              <figure><img src="" alt="" /></figure>
+              <div class="content">
+                <div class="description">
+                  <div class="title">
+                    <p>Tratamiento con radio-223 (ra-223)</p>
+                  </div>
+                  <p>
+                    Para pacientes con cáncer de próstata metastásico a hueso.
+                  </p>
+                </div>
+                <a
+                  class="gallery"
+                  onclick="document.getElementById('id01').style.display='block'"
+                  ><i class="fa-thin fa-images"></i
+                ></a>
+                <a class="video" onclick="document.getElementById('id02').style.display='block'"
+                  ><i class="fa-thin fa-clapperboard-play"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="service">
+              <figure><img src="img/hero.png" alt="" /></figure>
+              <div class="content">
+                <div class="description">
+                  <div class="title">
+                    <p>Tratamiento con radioyodo (I-131)</p>
+                  </div>
+                  <p>Para pacientes con cáncer diferenciado de tiroides.</p>
+                </div>
+                <a
+                  class="gallery"
+                  onclick="document.getElementById('id01').style.display='block'"
+                  ><i class="fa-thin fa-images"></i
+                ></a>
+                <a class="video" onclick="document.getElementById('id02').style.display='block'"
+                  ><i class="fa-thin fa-clapperboard-play"></i
+                ></a>
+              </div>
+            </div>
+            <div class="service">
+              <figure><img src="img/pet.png" alt="" /></figure>
+              <div class="content">
+                <div class="description">
+                  <div class="title"><p>Estudios PET/CT</p></div>
+                </div>
+                <a
+                  class="gallery"
+                  onclick="document.getElementById('id01').style.display='block'"
+                  ><i class="fa-thin fa-images"></i
+                ></a>
+                <a class="video" onclick="document.getElementById('id02').style.display='block'"
+                  ><i class="fa-thin fa-clapperboard-play"></i
+                ></a>
+              </div>
+            </div>
+            <div class="service">
+              <figure><img src="img/lutecio.png" alt="" /></figure>
+              <div class="content">
+                <div class="description">
+                  <div class="title">
+                    <p>Tratamiento con lutecio-177 dota-toc</p>
+                  </div>
+                  <p>Para pacientes con cáncer diferenciado de tiroides.</p>
+                </div>
+                <a
+                  class="gallery"
+                  onclick="document.getElementById('id01').style.display='block'"
+                  ><i class="fa-thin fa-images"></i
+                ></a>
+                <a class="video" onclick="document.getElementById('id02').style.display='block'"
+                  ><i class="fa-thin fa-clapperboard-play"></i
+                ></a>
+              </div>
+            </div>
+            <div class="service">
+              <figure><img src="" alt="" /></figure>
+              <div class="content">
+                <div class="description">
+                  <div class="title">
+                    <p>Tratamiento con radio-223 (ra-223)</p>
+                  </div>
+                  <p>
+                    Para pacientes con cáncer de próstata metastásico a hueso.
+                  </p>
+                </div>
+                <a
+                  class="gallery"
+                  onclick="document.getElementById('id01').style.display='block'"
+                  ><i class="fa-thin fa-images"></i
+                ></a>
+                <a class="video" onclick="document.getElementById('id02').style.display='block'"
+                  ><i class="fa-thin fa-clapperboard-play"></i
+                ></a>
+              </div>
+            </div>
+            <!-- modal -->
+            <div id="id01" class="w3-modal">
+              <div class="w3-modal-content">
+                <div class="w3-container">
+                  <span
+                    onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-display-topright"
+                    >&times;</span
+                  >
+                  <!-- <div class="glide" id="service-gallery">
+                    <div class="glide__track" data-glide-el="track">
+                      <ul class="glide__slides">
+                        <li class="glide__slide">
+                          <figure><img src="img/pet.png" alt="" /></figure>
+                        </li>
+
+                        <li class="glide__slide">
+                          <figure><img src="img/pet.png" alt="" /></figure>
+                        </li>
+                      </ul>
+                    </div>
+                  </div> -->
+
+                  <div class="gallery">
+                    <figure><img src="" alt=""></figure>
+                    <figure><img src="" alt=""></figure>
+                    <figure><img src="" alt=""></figure>
+                    <figure><img src="" alt=""></figure>
+                    <figure><img src="" alt=""></figure>
+                    <figure><img src="" alt=""></figure>
+                    <figure><img src="" alt=""></figure>
+                    <figure><img src="" alt=""></figure>
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="id02" class="w3-modal">
+              <div class="w3-modal-content">
+                <div class="w3-container">
+                  <span
+                    onclick="document.getElementById('id02').style.display='none'"
+                    class="w3-button w3-display-topright"
+                    >&times;</span
+                  >
+
+                  <div class="gallery">
+                    <p>VIDEO</p>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="inter">
+        <h2>Expertos a tu <span>servicio</span></h2>
+        <div class="container">
+          <div class="vertical wow"></div>
+          <div class="left-right wow">
+            <div class="left">
+              <figure><img src="img/qw.jpg" alt="" /></figure>
+            </div>
+            <div class="right">
+              <figure><img src="img/qz.jpg" alt="" /></figure>
+            </div>
+          </div>
+          <div class="right-left wow">
+            <div class="left">
+              <figure><img src="img/aa.jpg" alt="" /></figure>
+            </div>
+          </div>
+          <div class="horizontal wow">
+            <figure>
+              <img src="img/qw.jpg" alt="" />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section id="rating">
+        <h2>Queremos saber tu opinion</h2>
+        <form action="">
+          <div class="left">
+            <input type="text" name="name" id="name" placeholder="Nombre" />
+            <fieldset class="star-icon">
+              <input type="radio" name="rating" id="rating1" value="5" />
+              <label for="rating1" class="fa fa-star"></label>
+              <input type="radio" name="rating" id="rating2" value="4" />
+              <label for="rating2" class="fa fa-star"></label>
+              <input type="radio" name="rating" id="rating3" value="3" />
+              <label for="rating3" class="fa fa-star"></label>
+              <input type="radio" name="rating" id="rating4" value="2" />
+              <label for="rating4" class="fa fa-star"></label>
+              <input type="radio" name="rating" id="rating5" value="1" />
+              <label for="rating5" class="fa fa-star"></label>
+              <input
+                type="radio"
+                name="rating"
+                id="rating0"
+                value="0"
+                checked
+              />
+              <label for="rating0" class="fa fa-star"></label>
+            </fieldset>
+          </div>
+          <textarea
+            name="comment"
+            id="comment"
+            cols="30"
+            rows="10"
+            placeholder="Comentario"
+          ></textarea>
+          <div class="bottom">
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </section>
+      <section id="testimonials">
+        <h2>Opiniones</h2>
+        <div class="glide" id="testimonials-slider">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <h4>Mi experiencia</h4>
+                <p>
+                  1 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus, ducimus amet exercitationem ad at quo.
+                  <span>”</span>
+                </p>
+                <div class="stars">
+                  <i class="fa fa-star active"></i
+                  ><i class="fa fa-star active"></i
+                  ><i class="fa fa-star active"></i
+                  ><i class="fa fa-star active"></i
+                  ><i class="fa fa-star active"></i>
+                </div>
+              </li>
+
+              <li class="glide__slide">
+                <h4>Mi experiencia</h4>
+                <p>
+                  2 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus, ducimus amet exercitationem ad at quo.
+                  <span>”</span>
+                </p>
+                <div class="stars">
+                  <i class="fa fa-star active"></i
+                  ><i class="fa fa-star active"></i
+                  ><i class="fa fa-star active"></i
+                  ><i class="fa fa-star active"></i
+                  ><i class="fa fa-star active"></i>
+                </div>
+              </li>
+
+              <li class="glide__slide">
+                <h4>Mi experiencia</h4>
+                <p>
+                  3 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus, ducimus amet exercitationem ad at quo.
+                  <span>”</span>
+                </p>
+                <div class="stars">
+                  <i class="fa fa-star active"></i
+                  ><i class="fa fa-star active"></i
+                  ><i class="fa fa-star active"></i
+                  ><i class="fa fa-star active"></i
+                  ><i class="fa fa-star active"></i>
+                </div>
+              </li>
+
+              <li class="glide__slide">
+                <h4>Mi experiencia</h4>
+                <p>
+                  4 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus, ducimus amet exercitationem ad at quo.
+                  <span>”</span>
+                </p>
+                <div class="stars">
+                  <i class="fa fa-star active"></i
+                  ><i class="fa fa-star active"></i
+                  ><i class="fa fa-star active"></i
+                  ><i class="fa fa-star active"></i
+                  ><i class="fa fa-star active"></i>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div> -->
+
+          <!-- <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+          </div> -->
+        </div>
+      </section>
+      <section id="articles">
+        <div class="container">
+          <div class="front">
+            <figure><img src="img/pubmed.png" alt="" /></figure>
+            <h3>NUESTROS ARTÍCULOS</h3>
+          </div>
+          <div class="articles">
+            <div class="content">
+              <div class="article">
+                <h4>
+                  Impacto de la medicina nuclear en el diagnóstico y tratamiento
+                  del cáncer diferenciado de tiroides.
+                </h4>
+                <a href="" target="_blank" class="button">Leer más</a>
+              </div>
+              <div class="article">
+                <h4>
+                  Impacto de la medicina nuclear en el diagnóstico y tratamiento
+                  del cáncer diferenciado de tiroides.
+                </h4>
+                <a href="" target="_blank" class="button">Leer más</a>
+              </div>
+              <div class="article">
+                <h4>
+                  Impacto de la medicina nuclear en el diagnóstico y tratamiento
+                  del cáncer diferenciado de tiroides.
+                </h4>
+                <a href="" target="_blank" class="button">Leer más</a>
+              </div>
+              <div class="article">
+                <h4>
+                  Impacto de la medicina nuclear en el diagnóstico y tratamiento
+                  del cáncer diferenciado de tiroides.
+                </h4>
+                <a href="" target="_blank" class="button">Leer más</a>
+              </div>
+              <div class="article">
+                <h4>
+                  Impacto de la medicina nuclear en el diagnóstico y tratamiento
+                  del cáncer diferenciado de tiroides.
+                </h4>
+                <a href="" target="_blank" class="button">Leer más</a>
+              </div>
+              <div class="article">
+                <h4>
+                  Impacto de la medicina nuclear en el diagnóstico y tratamiento
+                  del cáncer diferenciado de tiroides.
+                </h4>
+                <a href="" target="_blank" class="button">Leer más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    
+    <footer>
+      <div class="background">
+        <figure>
+          <img src="img/footer.jpg" alt="" />
+        </figure>
+      </div>
+
+      <div class="container">
+        <div class="left">
+          <figure><img src="img/logo-full.png" alt="" /></figure>
+          <div class="sections">
+            <p>Secciones</p>
+            <ul>
+              <li><a href="">HOME</a></li>
+              <li><a href="">NOSOTROS</a></li>
+              <li><a href="">SERVICIOS</a></li>
+              <li><a href="">CONTACTO</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="right">
+          <h2>ponte en <span>contacto</span></h2>
+          <form action="">
+            <div class="col">
+              <input type="text" name="name" id="name" placeholder="Nombre" />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Correo Electrónico"
+              />
+            </div>
+            <div class="col">
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Teléfono"
+              />
+              <input
+                type="text"
+                name="service"
+                id="service"
+                placeholder="Servicio de interes"
+              />
+            </div>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Escríbenos cómo podemos ayudarte"
+            ></textarea>
+            <div class="bottom">
+              <button type="submit">Enviar</button>
+            </div>
+          </form>
+
+          <div class="bottom">
+            <div class="logos">
+              <figure><img src="img/pubmed.png" alt="" /></figure>
+              <figure><img src="img/researchgate.png" alt="" /></figure>
+            </div>
+
+            <a href="">POLITICA DE PRIVACIDAD</a>
+            <a href="">DERECHOS RESERVADOS MOLCAJETE 2023</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
   <script src="js/script.js"></script>
+  <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+  <script>
+    var testimonials = new Glide("#testimonials-slider", {
+      type: "carousel",
+      autoplay: 5000,
+      hoverpause: true,
+      perView: 3,
+      breakpoints: {
+        550: {
+          perView: 1
+        },
+        900: {
+          perView: 2
+        }
+      }
+      
+    });
+
+    testimonials.mount();
+
+    var service = new Glide("#service-gallery", {
+      type: "carousel",
+      autoplay: 5000,
+      hoverpause: true,
+      perView: 1,
+    });
+
+    service.mount();
+  </script>
 </html>

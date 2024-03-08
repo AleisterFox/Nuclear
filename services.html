@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x: hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link
+      rel="shortcut icon"
+      href="img/icono.png"
+      type="image/x-icon"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="shortcut icon"
+      href="img/icono.png"
+      type="image/x-icon"
+      media="(prefers-color-scheme: dark)"
+    />
+
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
+    />
+
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <title>Nuclear</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">
+          <picture>
+            <source media="(max-width: 768px)" srcset="img/logo-white.png" />
+            <img src="img/logo-white.png" alt="" />
+          </picture>
+        </a>
+
+        <div class="menu">
+          <div class="sidebar">
+            <i class="fa-solid fa-x close"></i>
+            <figure><img src="img/icono-white.png" alt="" /></figure>
+            <ul>
+              <li class="navbarb active"><a href="index.html">HOME</a></li>
+              <li class="navbarb"><a href="us.html">NOSOTROS</a></li>
+              <li class="navbarb">
+                <a href="services.html">SERVICIOS</a>
+              </li>
+              <li class="navbarb"><a href="contact.html">CONTACTO</a></li>
+            </ul>
+          </div>
+        </div>
+        <a><i class="fa-solid fa-bars menu__button"></i></a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="whatsapp">
+        <a href=""><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <section
+        id="hero"
+        style="justify-content: flex-end; padding-bottom: 5rem"
+      >
+        <div class="background">
+          <figure>
+            <img src="img/ganglio.jpg" alt="" />
+          </figure>
+        </div>
+
+        <div class="bottom">
+          <div
+            class="right"
+            style="
+              background: linear-gradient(to left, var(--aqua), var(--purple));
+              border-top-right-radius: 10rem;
+              border-bottom-right-radius: 10rem;
+              padding: 0 2rem;
+            "
+          >
+            <h2>Tenemos lo que necesitas</h2>
+          </div>
+          <div class="left">
+            <figure><img src="img/pubmed.png" alt="logo pubmed" /></figure>
+            <figure>
+              <img src="img/researchgate.png" alt="logo researchgate" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="all-services">
+          <div class="service">
+            <figure><img src="img/hero.png" alt="" /></figure>
+            <div class="content">
+              <div class="description">
+                <div class="title">
+                  <p>Tratamiento con radioyodo (I-131)</p>
+                </div>
+                <p>Para pacientes con cáncer diferenciado de tiroides.</p>
+              </div>
+              <a
+                class="gallery"
+                onclick="document.getElementById('id01').style.display='block'"
+                ><i class="fa-thin fa-images"></i
+              ></a>
+              <a
+                class="video"
+                onclick="document.getElementById('id02').style.display='block'"
+                ><i class="fa-thin fa-clapperboard-play"></i
+              ></a>
+            </div>
+          </div>
+          <div class="service">
+            <figure><img src="img/pet.png" alt="" /></figure>
+            <div class="content">
+              <div class="description">
+                <div class="title"><p>Estudios PET/CT</p></div>
+              </div>
+              <a
+                class="gallery"
+                onclick="document.getElementById('id01').style.display='block'"
+                ><i class="fa-thin fa-images"></i
+              ></a>
+              <a
+                class="video"
+                onclick="document.getElementById('id02').style.display='block'"
+                ><i class="fa-thin fa-clapperboard-play"></i
+              ></a>
+            </div>
+          </div>
+          <div class="service">
+            <figure><img src="img/lutecio.png" alt="" /></figure>
+            <div class="content">
+              <div class="description">
+                <div class="title">
+                  <p>Tratamiento con lutecio-177 dota-toc</p>
+                </div>
+                <p>Para pacientes con cáncer diferenciado de tiroides.</p>
+              </div>
+              <a
+                class="gallery"
+                onclick="document.getElementById('id01').style.display='block'"
+                ><i class="fa-thin fa-images"></i
+              ></a>
+              <a
+                class="video"
+                onclick="document.getElementById('id02').style.display='block'"
+                ><i class="fa-thin fa-clapperboard-play"></i
+              ></a>
+            </div>
+          </div>
+          <div class="service">
+            <figure><img src="" alt="" /></figure>
+            <div class="content">
+              <div class="description">
+                <div class="title">
+                  <p>Tratamiento con radio-223 (ra-223)</p>
+                </div>
+                <p>
+                  Para pacientes con cáncer de próstata metastásico a hueso.
+                </p>
+              </div>
+              <a
+                class="gallery"
+                onclick="document.getElementById('id01').style.display='block'"
+                ><i class="fa-thin fa-images"></i
+              ></a>
+              <a
+                class="video"
+                onclick="document.getElementById('id02').style.display='block'"
+                ><i class="fa-thin fa-clapperboard-play"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="service">
+            <figure><img src="img/hero.png" alt="" /></figure>
+            <div class="content">
+              <div class="description">
+                <div class="title">
+                  <p>Tratamiento con radioyodo (I-131)</p>
+                </div>
+                <p>Para pacientes con cáncer diferenciado de tiroides.</p>
+              </div>
+              <a
+                class="gallery"
+                onclick="document.getElementById('id01').style.display='block'"
+                ><i class="fa-thin fa-images"></i
+              ></a>
+              <a
+                class="video"
+                onclick="document.getElementById('id02').style.display='block'"
+                ><i class="fa-thin fa-clapperboard-play"></i
+              ></a>
+            </div>
+          </div>
+          <div class="service">
+            <figure><img src="img/pet.png" alt="" /></figure>
+            <div class="content">
+              <div class="description">
+                <div class="title"><p>Estudios PET/CT</p></div>
+              </div>
+              <a
+                class="gallery"
+                onclick="document.getElementById('id01').style.display='block'"
+                ><i class="fa-thin fa-images"></i
+              ></a>
+              <a
+                class="video"
+                onclick="document.getElementById('id02').style.display='block'"
+                ><i class="fa-thin fa-clapperboard-play"></i
+              ></a>
+            </div>
+          </div>
+          <div class="service">
+            <figure><img src="img/lutecio.png" alt="" /></figure>
+            <div class="content">
+              <div class="description">
+                <div class="title">
+                  <p>Tratamiento con lutecio-177 dota-toc</p>
+                </div>
+                <p>Para pacientes con cáncer diferenciado de tiroides.</p>
+              </div>
+              <a
+                class="gallery"
+                onclick="document.getElementById('id01').style.display='block'"
+                ><i class="fa-thin fa-images"></i
+              ></a>
+              <a
+                class="video"
+                onclick="document.getElementById('id02').style.display='block'"
+                ><i class="fa-thin fa-clapperboard-play"></i
+              ></a>
+            </div>
+          </div>
+          <div class="service">
+            <figure><img src="" alt="" /></figure>
+            <div class="content">
+              <div class="description">
+                <div class="title">
+                  <p>Tratamiento con radio-223 (ra-223)</p>
+                </div>
+                <p>
+                  Para pacientes con cáncer de próstata metastásico a hueso.
+                </p>
+              </div>
+              <a
+                class="gallery"
+                onclick="document.getElementById('id01').style.display='block'"
+                ><i class="fa-thin fa-images"></i
+              ></a>
+              <a
+                class="video"
+                onclick="document.getElementById('id02').style.display='block'"
+                ><i class="fa-thin fa-clapperboard-play"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- modal -->
+          <div id="id01" class="w3-modal">
+            <div class="w3-modal-content">
+              <div class="w3-container">
+                <span
+                  onclick="document.getElementById('id01').style.display='none'"
+                  class="w3-button w3-display-topright"
+                  >&times;</span
+                >
+                <!-- <div class="glide" id="service-gallery">
+                  <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                      <li class="glide__slide">
+                        <figure><img src="img/pet.png" alt="" /></figure>
+                      </li>
+
+                      <li class="glide__slide">
+                        <figure><img src="img/pet.png" alt="" /></figure>
+                      </li>
+                    </ul>
+                  </div>
+                </div> -->
+
+                <div class="gallery">
+                  <figure><img src="" alt="" /></figure>
+                  <figure><img src="" alt="" /></figure>
+                  <figure><img src="" alt="" /></figure>
+                  <figure><img src="" alt="" /></figure>
+                  <figure><img src="" alt="" /></figure>
+                  <figure><img src="" alt="" /></figure>
+                  <figure><img src="" alt="" /></figure>
+                  <figure><img src="" alt="" /></figure>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="id02" class="w3-modal">
+            <div class="w3-modal-content">
+              <div class="w3-container">
+                <span
+                  onclick="document.getElementById('id02').style.display='none'"
+                  class="w3-button w3-display-topright"
+                  >&times;</span
+                >
+
+                <div class="gallery">
+                  <p>VIDEO</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="background">
+        <figure>
+          <img src="img/footer.jpg" alt="" />
+        </figure>
+      </div>
+
+      <div class="container">
+        <div class="left">
+          <figure><img src="img/logo-full.png" alt="" /></figure>
+          <div class="sections">
+            <p>Secciones</p>
+            <ul>
+              <li><a href="">HOME</a></li>
+              <li><a href="">NOSOTROS</a></li>
+              <li><a href="">SERVICIOS</a></li>
+              <li><a href="">CONTACTO</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="right">
+          <h2>ponte en <span>contacto</span></h2>
+          <form action="">
+            <div class="col">
+              <input type="text" name="name" id="name" placeholder="Nombre" />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Correo Electrónico"
+              />
+            </div>
+            <div class="col">
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Teléfono"
+              />
+              <input
+                type="text"
+                name="service"
+                id="service"
+                placeholder="Servicio de interes"
+              />
+            </div>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Escríbenos cómo podemos ayudarte"
+            ></textarea>
+            <div class="bottom">
+              <button type="submit">Enviar</button>
+            </div>
+          </form>
+
+          <div class="bottom">
+            <div class="logos">
+              <figure><img src="img/pubmed.png" alt="" /></figure>
+              <figure><img src="img/researchgate.png" alt="" /></figure>
+            </div>
+
+            <a href="">POLITICA DE PRIVACIDAD</a>
+            <a href="">DERECHOS RESERVADOS MOLCAJETE 2023</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/script.js"></script>
+  <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+  <script>
+    var service = new Glide("#service-gallery", {
+      type: "carousel",
+      autoplay: 5000,
+      hoverpause: true,
+      perView: 1,
+    });
+
+    service.mount();
+  </script>
+</html>
